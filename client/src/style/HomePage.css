@@ -1,0 +1,39 @@
+/* HomePage.css */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* ให้เต็มความสูงของหน้าจอ */
+    background-image: url('../images/bg.jpg'); /* เส้นทางไปยังภาพพื้นหลัง */
+    background-size: cover; /* ให้ภาพเต็มพื้นที่ */
+    background-position: center; /* จัดตำแหน่งให้กลาง */
+    color: white; /* เปลี่ยนสีข้อความให้เห็นชัด */
+}
+
+h1 {
+    font-size: 2.5rem; /* ขนาดตัวอักษรหัวข้อ */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+input {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px; /* มุมโค้ง */
+    border: none;
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px; /* มุมโค้ง */
+    border: none;
+    background-color: #28a745; /* สีพื้นหลังปุ่ม */
+    color: white; /* สีข้อความ */
+    cursor: pointer; /* เปลี่ยนเป็นมือเมื่อชี้ */
+}
+
+button:hover {
+    background-color: #218838; /* เปลี่ยนสีเมื่อวางเมาส์ */
+}

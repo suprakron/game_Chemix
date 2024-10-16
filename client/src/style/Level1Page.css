@@ -1,0 +1,127 @@
+.card {
+    width: 80%; /* กำหนดความกว้างของ card */
+    max-width: 800px; /* กำหนดความกว้างสูงสุด */
+    margin: 20px auto; /* เพิ่มช่องว่างด้านบนและด้านล่าง และจัดให้อยู่ตรงกลาง */
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    border-radius: 15px; /* มุมโค้งมน */
+    padding: 20px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ card */
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 26px; /* ขยายฟอนต์หัวข้อ */
+    margin-bottom: 10px;
+    color: #2c3e50; /* ใช้สีที่เข้มขึ้นเพื่อความชัดเจน */
+}
+
+.card p {
+    font-size: 18px;
+    color: #7f8c8d; /* สีข้อความที่ดูนุ่มนวล */
+    margin-bottom: 20px;
+}
+
+.answer-section {
+    display: flex; /* แสดงผลในแนวนอน */
+    justify-content: space-around; /* จัดระยะห่างเท่ากันระหว่างคอนเทนเนอร์ */
+    margin-top: 20px; /* เพิ่มช่องว่างด้านบน */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* ใช้ความกว้างเต็ม */
+    padding: 20px;
+    background-color: #f8f9fa; /* พื้นหลังสีเทาอ่อน */
+    border-radius: 15px; /* มุมโค้งมน */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ card */
+    margin: 10px 15px;  
+    transition: transform 0.3s ease;  
+}
+
+.container:hover {
+    transform: scale(1.05);  
+}
+
+.rectangle {
+    width: 100%; 
+    max-width: 220px;  
+    height: 60px;
+    background: linear-gradient(135deg, #007bff, #0056b3);  
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+ 
+.input-field {
+    width: 180px;
+    height: 40px;
+    background-color: #fff7e6;
+    border-radius: 20px;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #f28b82;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+ 
+.circle span {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ 
+.button-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-section button {
+    padding: 12px 30px; 
+    margin: 5px;
+    background-color: #28a745; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;  
+}
+
+.button-section button:hover {
+    background-color: #218838;  
+    transform: translateY(-2px);  
+}
+
+.question-content {
+    background-color: #007bff; 
+    padding: 5px;  
+    border-radius: 10px; 
+    color: white; 
+    margin: 0; 
+    width: fit-content; 
+    height: 10;
+}

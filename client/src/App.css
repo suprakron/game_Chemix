@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  background-image: url('../src/images/bg.jpg');  
+  background-size: cover;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  max-height: 150px; /* Limit max height for logo */
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem; /* Adjust font size */
+  color: white;
+  text-align: center; /* Center text */
+  padding: 20px; /* Add padding */
+}
+
+.header h2 {
+  background-color: #e0f7fa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px; /* Increase bottom margin */
+  font-size: 2rem; /* Larger font size */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add subtle shadow */
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-form {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to new line */
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto; /* Center the form */
+}
+
+.input-group {
+  margin: 10px; /* Add margin between input groups */
+}
+
+.input-group label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  width: 100px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Add transition for hover effects */
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+@media (max-width: 768px) {
+  .input-form {
+    width: 90%; /* Expand form width on smaller screens */
+  }
+
+  .input-group input {
+    width: 80px; /* Adjust input width on smaller screens */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
